@@ -26,6 +26,7 @@ public abstract class TNT implements Listener
         this(name, id, mat, new HashSet<String>());
     }
     
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected TNT(final String name, final String id, final Material mat, final HashSet<String> lore) {
         Bukkit.getPluginManager().registerEvents((Listener)this, (Plugin)TNTMain.get());
         this.entities = new HashSet<Entity>();

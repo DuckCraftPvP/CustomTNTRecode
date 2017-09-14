@@ -9,6 +9,8 @@ import org.bukkit.entity.*;
 import java.util.*;
 import org.bukkit.plugin.*;
 import org.bukkit.*;
+import com.ghstudios.CustomTNT.cmds.*;
+import org.bukkit.command.*;
 
 public class TNTMain extends JavaPlugin
 {
@@ -75,6 +77,7 @@ public class TNTMain extends JavaPlugin
             System.out.println("");
             System.out.println(ChatColor.GREEN + "[CustomTNTRecoded]" + ChatColor.YELLOW + "______________________________________________________________    ");
         }
+        this.getCommand("CustomTNT").setExecutor((CommandExecutor)new Cmds());
     }
     
     public void onDisable() {

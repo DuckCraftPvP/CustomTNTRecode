@@ -35,8 +35,10 @@ public class FireworkEvent
         return effect;
     }
     
-    public void InstantFirework(final FireworkEffect fe, final Location loc) {
-        final Firework f = (Firework)loc.getWorld().spawn(loc, (Class)Firework.class);
+    @SuppressWarnings("unchecked")
+	public void InstantFirework(final FireworkEffect fe, final Location loc) {
+        @SuppressWarnings("rawtypes")
+		final Firework f = (Firework)loc.getWorld().spawn(loc, (Class)Firework.class);
         final FireworkMeta fm = f.getFireworkMeta();
         fm.addEffect(fe);
         f.setFireworkMeta(fm);
