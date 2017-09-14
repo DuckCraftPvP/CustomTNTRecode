@@ -29,7 +29,7 @@ public class Cmds implements CommandExecutor {
 					}
 				} else if (args.length == 3) {
 					if (args[2].equalsIgnoreCase("version")) {
-						player.sendMessage("This command is not added yet. | version");
+						player.sendMessage(ChatColor.GREEN + "Version of CustomTNT Is" + ChatColor.WHITE + ":" + TNTMain.get().getConfig().getInt("Version") + TNTMain.get().getConfig().getString("Update-Date"));
 					}
 				} else if (args.length == 4) {
 					if (args[3].equalsIgnoreCase("give")) {
