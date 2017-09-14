@@ -1,0 +1,12 @@
+###########################
+#### Made by GHStudios ####
+###########################
+
+name: CustomTNTRecoded
+author: GHStudios
+version: 3.0
+main: com.ghstudios.CustomTNT.TNTMain
+commands:
+  CustomTNT:
+    description: List of CustomTNT Commands
+    permission: customtnt.command
